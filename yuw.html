@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chat Example</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background: linear-gradient(90deg, gray, white, black);
+        text-align: center;
+        margin: 0;
+        padding: 0;
+        justify-content: center;
+      }
+
+      img {
+        width: 150px;
+        height: 150px;
+        margin-bottom: 20px;
+        border-radius: 15px;
+        border: 3px solid gray;
+      }
+
+      .container {
+        max-width: 400px;
+        margin: 50px auto;
+        background: linear-gradient(45deg,red,violet,gray);
+        color: #f0f0f0;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Chat Mo Si MOMMY</h1>
+      <div><img src="guitar.jpg" alt="photo"></div>
+      <button onclick="chat()">Start Chat</button>
+    </div>
+
+    <script>
+      document.getElementById("chatButton");
+
+      function chat() {
+        // Greet the User
+        alert("Hello!");
+
+        // Ask the user for their name
+        var yourName = prompt("Ano Pangalan mo kapatid?");
+
+        // Ask user what their favorite food is
+        var food = prompt("Ano ang paborito mong pagkain?");
+        alert("Gusto ko " + food + ", ang sarap ng nito eh");
+
+        // Ask user if they would like to share their food
+        var shareFood = confirm("Tara kain?");
+
+        // If the user clicks "OK"
+        if (shareFood === true) {
+          alert("Salamat!");
+        }
+
+        // If the user clicks "cancel"
+        else {
+          alert("Next time nalang");
+        }
+      }
+    </script>
+  </body>
+</html>
